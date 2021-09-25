@@ -1,6 +1,7 @@
 <?php
 
-use App\Models\Test;
+use App\Http\Controllers\TestsApiController;
+use App\Models\test;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +20,4 @@ Route::middleware('api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/tests', function () {
-    return Test::all();
-});
+Route::get('/tests', [TestsApiController::class, 'index']);
