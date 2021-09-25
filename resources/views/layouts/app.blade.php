@@ -7,9 +7,6 @@
   <title>Laravel Test</title>
 </head>
 <body>
-<div id="response">
-    API response here
-</div>
 
 </body>
 </html>
