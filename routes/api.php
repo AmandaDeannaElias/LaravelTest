@@ -20,4 +20,4 @@ Route::middleware('api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/tests', [TestsApiController::class, 'index']);
+Route::get('tests', [TestsApiController::class, 'index']);
