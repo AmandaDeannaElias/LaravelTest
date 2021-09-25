@@ -10,16 +10,6 @@
 <div id="response">
     API response here
 </div>
-<script>
-    fetch('/tests')
-    .then(function(response) {
-        response.text().then(function(data) {
-            document.getElementById('response').innerHTML = data;
-        });
-    })
-    .catch(function(err) {
-        console.log('Error: ' +  err);
-    });
-</script>
+
 </body>
 </html>
