@@ -7,6 +7,8 @@
   <title>Laravel Test</title>
 </head>
 <body>
-
+<div id="app">
+  <front-page></front-page>
+</div>
 </body>
 </html>
