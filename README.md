@@ -1,8 +1,11 @@
 # Resources
+### Laravel/Vue.js/API
 - https://medium.com/hackernoon/a-beginners-guide-to-building-a-rest-api-with-laravel-5c717afd77fe
 - https://www.youtube.com/watch?v=4uVNz9sQn18
 - https://www.youtube.com/watch?v=WDha52dbLWM
 - https://github.com/LaravelDaily/Laravel-API-Vue-Catalog/tree/f2e3d11b553754682a6e9a4a57a7d68da5e4b957
+### Modal Pop-up
+- https://www.youtube.com/watch?v=VuGRSpy92cI
 
 ## Issues I ran into
 - Vue would not compile on npm run dev
