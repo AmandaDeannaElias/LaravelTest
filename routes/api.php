@@ -20,4 +20,3 @@ Route::middleware('api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::view('/', 'app');
