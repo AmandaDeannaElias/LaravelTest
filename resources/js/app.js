@@ -1,3 +1,5 @@
+require('./bootstrap');
+
 import Vue from 'vue'
 
 Vue.component('front-page', require('./components/Front.vue').default);
