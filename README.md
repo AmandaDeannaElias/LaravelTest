@@ -9,7 +9,7 @@
 
 ## How I fixed it
 #### - Vue would not compile on npm run dev
-** * Fresh install of node did not resolve this issue * **
+*** Fresh install of node did not resolve this issue ***
 - Deleted the node_modules folder, deleted the package-lock.json file, ran npm install again followed by npm run dev
 
 #### - Error message "Vue.component is not a function" in console
