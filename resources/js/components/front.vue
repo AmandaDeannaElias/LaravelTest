@@ -1,6 +1,25 @@
 <template>
   <div class="container">
-    <button class="button" @click="showModal = true">Show Modal</button>
+   
+    <div class="row">
+      <div class="col-lg-3">
+        <h1 class="my-4">My Laravel Test</h1>
+        <table class="list-group">
+          <tr>
+          <th>Name:</th>
+          <th>Description: </th>
+          </tr>
+          <tr  v-for="test in tests" :key="test.id">
+          <td class="list-group-item">
+             {{ test.name }}
+          </td>
+          <td>
+             {{ test.description }}
+          </td>
+          </tr>
+        </table>
+      </div>
+       <button class="button" @click="showModal = true">Show Modal</button>
     <transition name="fade" appear>
       <div
         class="modal-overlay"
@@ -10,24 +29,13 @@
     </transition>
     <transition name="slide" appear>
       <div class="modal" v-if="showModal">
-        <h1>Lorem Ipsum</h1>
+        <h1>Hi There!</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-          provident explicabo accusamus laudantium voluptatum nobis sed nesciunt
-          neque possimus molestiae?
+          I will be using this application to showcase my skills in Laravel and Vue.js!
         </p>
-        <button class="button" @click="showModal = false">Close Modal</button>
+        <button class="button" @click="showModal = false" >Close Modal</button>
       </div>
     </transition>
-    <div class="row">
-      <div class="col-lg-3">
-        <h1 class="my-4">My Laravel Test</h1>
-        <div class="list-group">
-          <p class="list-group-item" v-for="test in tests" :key="test.id">
-            Name: {{ test.name }} Description: {{ test.description }}
-          </p>
-        </div>
-      </div>
     </div>
   </div>
 </template>

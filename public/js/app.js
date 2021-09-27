@@ -2095,6 +2095,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -2109,7 +2121,7 @@ __webpack_require__.r(__webpack_exports__);
     loadTests: function loadTests() {
       var _this = this;
 
-      axios.get('./api/tests').then(function (response) {
+      axios.get("./api/tests").then(function (response) {
         _this.tests = response.data.data;
       })["catch"](function (error) {
         console.log(error);
@@ -19677,90 +19689,107 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "container" },
-    [
-      _c(
-        "button",
-        {
-          staticClass: "button",
-          on: {
-            click: function($event) {
-              _vm.showModal = true
-            }
-          }
-        },
-        [_vm._v("\n Show Modal\n")]
-      ),
-      _vm._v(" "),
-      _c("transition", { attrs: { name: "fade", appear: "" } }, [
-        _vm.showModal
-          ? _c("div", {
-              staticClass: "modal-overlay",
-              on: {
-                click: function($event) {
-                  _vm.showModal = false
-                }
-              }
-            })
-          : _vm._e()
-      ]),
-      _vm._v(" "),
-      _c("transition", { attrs: { name: "slide", appear: "" } }, [
-        _vm.showModal
-          ? _c("div", { staticClass: "modal" }, [
-              _c("h1", [_vm._v("Lorem Ipsum")]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem provident explicabo accusamus laudantium voluptatum nobis sed nesciunt neque possimus molestiae?"
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "button",
-                  on: {
-                    click: function($event) {
-                      _vm.showModal = false
-                    }
-                  }
-                },
-                [_vm._v("\n   Close Modal\n  ")]
-              )
-            ])
-          : _vm._e()
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
+  return _c("div", { staticClass: "container" }, [
+    _c(
+      "div",
+      { staticClass: "row" },
+      [
         _c("div", { staticClass: "col-lg-3" }, [
           _c("h1", { staticClass: "my-4" }, [_vm._v("My Laravel Test")]),
           _vm._v(" "),
           _c(
-            "div",
+            "table",
             { staticClass: "list-group" },
-            _vm._l(_vm.tests, function(test) {
-              return _c("p", { key: test.id, staticClass: "list-group-item" }, [
-                _vm._v(
-                  "\n                       Name: " +
-                    _vm._s(test.name) +
-                    "  Description: " +
-                    _vm._s(test.description) +
-                    "\n                   "
+            [
+              _vm._m(0),
+              _vm._v(" "),
+              _vm._l(_vm.tests, function(test) {
+                return _c("tr", { key: test.id }, [
+                  _c("td", { staticClass: "list-group-item" }, [
+                    _vm._v("\n           " + _vm._s(test.name) + "\n        ")
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      "\n           " + _vm._s(test.description) + "\n        "
+                    )
+                  ])
+                ])
+              })
+            ],
+            2
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "button",
+            on: {
+              click: function($event) {
+                _vm.showModal = true
+              }
+            }
+          },
+          [_vm._v("Show Modal")]
+        ),
+        _vm._v(" "),
+        _c("transition", { attrs: { name: "fade", appear: "" } }, [
+          _vm.showModal
+            ? _c("div", {
+                staticClass: "modal-overlay",
+                on: {
+                  click: function($event) {
+                    _vm.showModal = false
+                  }
+                }
+              })
+            : _vm._e()
+        ]),
+        _vm._v(" "),
+        _c("transition", { attrs: { name: "slide", appear: "" } }, [
+          _vm.showModal
+            ? _c("div", { staticClass: "modal" }, [
+                _c("h1", [_vm._v("Hi There!")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n        I will be using this application to showcase my skills in Laravel and Vue.js!\n      "
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "button",
+                    on: {
+                      click: function($event) {
+                        _vm.showModal = false
+                      }
+                    }
+                  },
+                  [_vm._v("Close Modal")]
                 )
               ])
-            }),
-            0
-          )
+            : _vm._e()
         ])
-      ])
-    ],
-    1
-  )
+      ],
+      1
+    )
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("th", [_vm._v("Name:")]),
+      _vm._v(" "),
+      _c("th", [_vm._v("Description: ")])
+    ])
+  }
+]
 render._withStripped = true
 
 
