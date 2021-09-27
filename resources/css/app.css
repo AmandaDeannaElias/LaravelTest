@@ -74,8 +74,13 @@
     table, th, td {
     border: 1px solid black;
     text-align: center;
-  }
-  table {
+    }
+
+    table {
     border-collapse: collapse;
     width: 100%;
-  }
+    }
+
+    th, td {
+    padding: 8px;
+    }

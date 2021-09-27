@@ -10,11 +10,9 @@
    
    #app {
     position: relative;
-    
     display: flex;
     justify-content: center;
     align-items: center;
-    
     width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
@@ -54,12 +52,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
-    
     width: 100%;
     max-width: 400px;
     background-color: #FFF;
     border-radius: 16px;
-    
     padding: 25px;
    }
     
@@ -80,8 +76,13 @@
     table, th, td {
     border: 1px solid black;
     text-align: center;
-  }
-  table {
+    }
+
+    table {
     border-collapse: collapse;
     width: 100%;
-  }
+    }
+
+    th, td {
+    padding: 8px;
+    }

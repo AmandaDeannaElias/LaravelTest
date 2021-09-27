@@ -2107,6 +2107,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -19706,12 +19708,16 @@ var render = function() {
               _vm._l(_vm.tests, function(test) {
                 return _c("tr", { key: test.id }, [
                   _c("td", { staticClass: "list-group-item" }, [
-                    _vm._v("\n           " + _vm._s(test.name) + "\n        ")
+                    _vm._v(
+                      "\n            " + _vm._s(test.name) + "\n          "
+                    )
                   ]),
                   _vm._v(" "),
                   _c("td", [
                     _vm._v(
-                      "\n           " + _vm._s(test.description) + "\n        "
+                      "\n            " +
+                        _vm._s(test.description) +
+                        "\n          "
                     )
                   ])
                 ])
@@ -19731,7 +19737,7 @@ var render = function() {
               }
             }
           },
-          [_vm._v("Show Modal")]
+          [_vm._v("\n      Show Modal\n    ")]
         ),
         _vm._v(" "),
         _c("transition", { attrs: { name: "fade", appear: "" } }, [
@@ -19754,7 +19760,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "\n        I will be using this application to showcase my skills in Laravel and Vue.js!\n      "
+                    "\n          I will be using this application to showcase my skills in Laravel\n          and Vue.js!\n        "
                   )
                 ]),
                 _vm._v(" "),
@@ -19786,7 +19792,7 @@ var staticRenderFns = [
     return _c("tr", [
       _c("th", [_vm._v("Name:")]),
       _vm._v(" "),
-      _c("th", [_vm._v("Description: ")])
+      _c("th", [_vm._v("Description:")])
     ])
   }
 ]
