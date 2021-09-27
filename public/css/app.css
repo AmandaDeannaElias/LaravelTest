@@ -5,7 +5,7 @@
    }
    
    body {
-    font-family: 'montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
    }
    
    #app {
@@ -36,7 +36,6 @@
     color: #FFF;
     font-size: 18px;
     font-weight: 700;
-    transition: 0.4s ease-out;
    }
    
    .modal-overlay {
@@ -77,27 +76,6 @@
      font-weight: 400;
      margin-bottom: 15px;
     }
-
-   
-   .fade-enter-active,
-   .fade-leave-active {
-    transition: opacity .5s;
-   }
-   
-   .fade-enter,
-   .fade-leave-to {
-    opacity: 0;
-   }
-   
-   .slide-enter-active,
-   .slide-leave-active {
-    transition: transform .5s;
-   }
-   
-   .slide-enter,
-   .slide-leave-to {
-    transform: translateY(-50%) translateX(100vw);
-   }
 
     table, th, td {
     border: 1px solid black;

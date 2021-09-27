@@ -5,16 +5,14 @@
    }
    
    body {
-    font-family: 'montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
    }
    
    #app {
     position: relative;
-    
     display: flex;
     justify-content: center;
     align-items: center;
-    
     width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
@@ -34,7 +32,6 @@
     color: #FFF;
     font-size: 18px;
     font-weight: 700;
-    transition: 0.4s ease-out;
    }
    
    .modal-overlay {
@@ -53,12 +50,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
-    
     width: 100%;
     max-width: 400px;
     background-color: #FFF;
     border-radius: 16px;
-    
     padding: 25px;
    }
     
@@ -75,27 +70,6 @@
      font-weight: 400;
      margin-bottom: 15px;
     }
-
-   
-   .fade-enter-active,
-   .fade-leave-active {
-    transition: opacity .5s;
-   }
-   
-   .fade-enter,
-   .fade-leave-to {
-    opacity: 0;
-   }
-   
-   .slide-enter-active,
-   .slide-leave-active {
-    transition: transform .5s;
-   }
-   
-   .slide-enter,
-   .slide-leave-to {
-    transform: translateY(-50%) translateX(100vw);
-   }
 
     table, th, td {
     border: 1px solid black;
